@@ -1,0 +1,270 @@
+/* General Style */
+
+html,
+html body
+{
+	height:			100%; 
+}
+
+body
+{
+	font: 			12pt verdana, geneva, lucida, 'lucida grande', 
+					arial, helvetica, sans-serif;
+	line-height:		110%;
+	text-align: 		center;
+	background-color: 	#FFFFFF;
+	margin:			0 0 0 0;	
+	padding:		0 0 0 0;
+	color:			#000000;
+	background:		#FFFFFF url(bubbles.jpg) repeat-x top;
+}
+
+/* Height Preserving Container - Keeps Page At Least As Tall As the Window */
+#HeightContainer
+{
+	height:			auto;
+	min-height: 	100%;
+	position: 		relative;
+}
+
+/* Main Containing Class - Keeps Page Width Reasonable */
+#HeightContainer #Site
+{
+	/*	Center the Page */
+	width: 			800px;
+	margin: 		0 auto;
+	text-align: 	left;
+	background:		#FFFFFF url(bar.png) repeat-x top;
+}
+
+/* Positional Formatting for the Top Title & Navigation Bar */
+#HeightContainer #Site #Top
+{
+	/* Positioning */
+	margin: 		0 0 0 0;
+	padding:		10px 0px 30px 0px;
+	width:			800px;
+	height:			48px;
+
+	/* Title Formatting */
+	color:			#FFFFFF;
+	text-align: 	left;
+	font-weight:	bold;
+	font-size:		34pt;
+	
+	background:		url(logo.png) left top no-repeat;
+	text-align:		center;
+	
+	line-height:	100%;	
+}
+
+#HeightContainer #Site #Tabs
+{
+	width:			780px;
+	height:			18px;
+	padding:		8px 10px 2px 10px;
+	margin:			0px 0px 4px 0px;
+	border-bottom: 	2px solid lightgray;
+}
+
+#HeightContainer #Site #chatArea #Prompt
+{
+	text-align:		center;
+	font-size:		26pt;
+}
+
+#HeightContainer #Site #chatArea #Prompt #topicbox
+{
+	font-size: 		1.0em;
+	font-family: 	helvetica;
+	border: 		1px solid black;
+	margin: 		0px;
+}
+
+#HeightContainer #Site #chatArea #repeatbox
+{
+	font-family: 	helvetica;
+	border: 		1px solid black;
+	margin: 		0px;
+}
+
+#HeightContainer #Site #chatArea
+{
+	position:		absolute;
+	top:			118px;
+	bottom:			112px;
+	width:			780px;
+	padding:		6px 10px 4px 10px;
+	overflow:		auto;
+	background:		#FFFFFF;
+}
+
+#HeightContainer #chatControls
+{
+	display:		none;
+	position:		absolute;
+	height:			48px;
+	bottom:			64px;
+	left:		 	0px;
+	right:			0px;
+	width:			800px;
+	margin-left:	auto;
+	margin-right:	auto;
+}
+
+#HeightContainer #chatControls  #chatbox
+{
+	width:			600px;
+}
+
+#HeightContainer #FooterBackground 
+{
+	position: 		absolute;
+	bottom:	 		0px;
+	left:		 	0px;
+	right:			0px;		
+	height:			64px;
+	margin-left:	auto;
+	margin-right:	auto;
+	margin-top:		0;
+	margin-bottom:	0;
+	width:			800px;
+	
+	padding:		0px 0px 0px 0px;	
+
+	/*	Background */
+	background-position: 	0% 0%;
+	border-top: 		1px solid #A4ADB9;
+}
+
+#HeightContainer #FooterBackground #FooterText
+{
+	position:		relative;
+	text-align:		left;
+	font-weight:	normal;
+	font-size:		8pt;
+	color:			#36393D;
+	width:			580px;
+	margin:			10px auto;
+	padding:		0px 10px 0px 10px;
+}
+
+img
+{
+	border-style:		none;
+}
+
+a
+{
+/*	text-decoration:	none;	*/
+}
+
+.deselTab
+{
+	padding: 4px 4px 6px 4px;
+	margin:	6px 10px 0px 10px;	
+}
+
+.deselTab:hover
+{
+	cursor:			pointer;
+}
+
+.selTab
+{
+	padding: 		0px 3px 2px 5px;
+	margin:			6px 8px 0px 8px;
+	border-top: 	2px solid gray;
+	border-left: 	1px solid gray;
+	border-right: 	3px solid black;
+	border-bottom: 	2px solid white;
+}
+
+.selTab:hover
+{
+	cursor:			pointer;
+}
+
+.newMessages
+{
+	font-style:		italic;
+	text-shadow: 	#8b8b8b 0.1em 0.1em 0.2em;
+}
+
+/* colors */
+.black
+{
+	font-weight:	bold;
+	color:			#000000;
+	display: 		inline;
+}
+
+.red
+{
+	font-weight:	bold;
+	color:			#F40233;
+	display: 		inline;
+}
+
+.green
+{
+	font-weight:	bold;
+	color:			#00A000;
+	display: 		inline;
+}
+
+.blue
+{
+	font-weight:	bold;
+	color:			#1b2d7b;
+	display: 		inline;
+}
+
+.cyan
+{
+	font-weight:	bold;
+	color:			#007777;
+	display:		inline;
+}
+
+.pink
+{
+	font-weight:	bold;
+	color:			#dd4477;
+	display:		inline;
+}
+
+.gold
+{
+	font-weight:	bold;
+	color:			#dad500;
+	display:		inline;
+}
+
+.purple
+{
+	font-weight:	bold;
+	color:			#900090;
+	display: 		inline;
+}
+
+.orange
+{
+	font-weight:	bold;
+	color:			#FF7F00;
+	display: 		inline;
+}
+
+.brown
+{
+	font-weight:	bold;
+	color:			#883300;
+	display: 		inline;
+}
+
+.notice
+{
+	text-decoration:	underline;
+	color:			#444444;
+	display:		inline;
+}
